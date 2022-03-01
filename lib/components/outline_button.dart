@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instant_messenger/utils/themes.dart';
+import 'package:instant_messenger/utils/constants.dart';
 
 class OutlineButton extends StatelessWidget {
   const OutlineButton(
