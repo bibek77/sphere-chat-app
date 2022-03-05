@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:instant_messenger/screens/login_page.dart';
 import 'package:instant_messenger/utils/constants.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,7 +15,9 @@ class HomeScreen extends StatelessWidget {
         children: [
           Spacer(flex: 2),
           Image.asset("assets/images/welcome-image.png"),
-          Spacer(flex: 3,),
+          Spacer(
+            flex: 3,
+          ),
           Text(
             "Hi! Lets Sphere Chat",
             textAlign: TextAlign.center,
@@ -33,10 +36,13 @@ class HomeScreen extends StatelessWidget {
                     ?.color!
                     .withOpacity(0.64)),
           ),
-          Spacer(flex: 3,),
+          Spacer(
+            flex: 3,
+          ),
           FittedBox(
             child: TextButton(
-                onPressed: () {},
+                onPressed: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LoginPage())),
                 child: Row(
                   children: [
                     Text(
@@ -48,7 +54,9 @@ class HomeScreen extends StatelessWidget {
                               ?.color
                               ?.withOpacity(0.8)),
                     ),
-                    SizedBox(width: kDefaultPadding/4,),
+                    SizedBox(
+                      width: kDefaultPadding / 4,
+                    ),
                     Icon(Icons.arrow_forward_ios,
                         size: 16,
                         color: Theme.of(context)
