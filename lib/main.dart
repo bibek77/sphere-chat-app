@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instant_messenger/screens/home_screen.dart';
+import 'package:instant_messenger/utils/themes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Sphere Chat',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: lightThemeData(context),
+      darkTheme: darkThemeData(context),
+      themeMode: ThemeMode.system,
       home: HomeScreen(),
     );
   }
