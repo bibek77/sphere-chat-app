@@ -14,15 +14,22 @@ class ChatBody extends StatelessWidget {
           color: kPrimaryColor,
           child: Row(
             children: [
+              SizedBox(width: kDefaultPadding * 1.5,),
               FilledOutlineButton(
                 press: () {},
                 text: "Recent",
                 isFilled: true,
               ),
-              SizedBox(width: kDefaultPadding,),
+              SizedBox(width: kDefaultPadding * 2,),
               FilledOutlineButton(
                 press: () {},
-                text: "Activee",
+                text: "Active",
+                isFilled: false,
+              ),
+              SizedBox(width: kDefaultPadding * 2,),
+              FilledOutlineButton(
+                press: () {},
+                text: "Calls",
                 isFilled: false,
               ),
             ],
