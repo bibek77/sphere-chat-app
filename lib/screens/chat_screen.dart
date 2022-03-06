@@ -14,6 +14,7 @@ class ChatScreen extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
+      elevation: 0,
       automaticallyImplyLeading: false,
       title: Text("Messages"),
       actions: [IconButton(onPressed: () {}, icon: Icon(Icons.search))],
