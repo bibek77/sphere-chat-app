@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instant_messenger/components/primary_button.dart';
+import 'package:instant_messenger/screens/chat_screen.dart';
 import 'package:instant_messenger/utils/constants.dart';
 
 class LoginPage extends StatelessWidget {
@@ -21,7 +22,8 @@ class LoginPage extends StatelessWidget {
             Spacer(
               flex: 1,
             ),
-            PrimaryButton(text: "Sign In", press: () {}),
+            PrimaryButton(text: "Sign In", press: () 
+            => Navigator.push(context, MaterialPageRoute(builder: (context) => ChatScreen()))),
             SizedBox(
               height: kDefaultPadding * 1.5,
             ),

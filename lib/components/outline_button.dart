@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:instant_messenger/utils/constants.dart';
 
-class OutlineButton extends StatelessWidget {
-  const OutlineButton(
+class FilledOutlineButton extends StatelessWidget {
+  const FilledOutlineButton(
       {Key? key,
       required this.isFilled,
       required this.press,
@@ -17,6 +17,7 @@ class OutlineButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: press,
+      elevation: isFilled ? 2 : 0,
       color: isFilled ? Colors.white : Colors.transparent,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
