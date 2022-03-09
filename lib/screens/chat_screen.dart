@@ -17,9 +17,9 @@ class ChatScreen extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.chat_bubble), label: "Chats"),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.person_crop_circle), label: "People"),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.phone), label: "Calls"),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.chat_bubble_2_fill), label: "Chats"),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.person_2_fill), label: "People"),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.phone_fill), label: "Calls"),
         ],
       ),
     );
