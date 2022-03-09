@@ -21,7 +21,7 @@ ChatItems(
   lastMessage: "Did you watch my Anime?",
   image: "assets/images/profile_images/anos-voligoad-profile.jpeg",
   time: "2m ago",
-  isActive: false
+  isActive: true
 ),
 ChatItems(
   name: "Edward Elric",
@@ -35,14 +35,14 @@ ChatItems(
   lastMessage: "hey hey hey !!!",
   image: "assets/images/profile_images/bokuto-profile.jpeg",
   time: "2d ago",
-  isActive: false
+  isActive: true
 ),
 ChatItems(
   name: "Zeke Yeager",
   lastMessage: "My plan is going to be successful. Want in ?",
   image: "assets/images/profile_images/zeke-yeager-profile.jpeg",
   time: "4d ago",
-  isActive: false
+  isActive: true
 ),
 ChatItems(
   name: "Genos",
