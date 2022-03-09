@@ -6,7 +6,7 @@ ThemeData lightThemeData(BuildContext context) {
   return ThemeData.light().copyWith(
     primaryColor: kPrimaryColor,
     scaffoldBackgroundColor: Colors.white,
-    // appBarTheme: appBarTheme,
+    appBarTheme: appBarTheme,
     iconTheme: IconThemeData(color: kContentLightColor),
     colorScheme: ColorScheme.light(
       primary: kPrimaryColor,
@@ -26,7 +26,7 @@ ThemeData darkThemeData(BuildContext context) {
   return ThemeData.light().copyWith(
       primaryColor: kPrimaryColor,
       scaffoldBackgroundColor: kContentLightColor,
-      // appBarTheme: appBarTheme,
+      appBarTheme: appBarTheme,
       iconTheme: IconThemeData(color: kContentDarkColor),
       colorScheme: ColorScheme.dark(
         primary: kPrimaryColor,
@@ -41,3 +41,5 @@ ThemeData darkThemeData(BuildContext context) {
           unselectedItemColor: kContentDarkColor.withOpacity(0.32),
           selectedIconTheme: IconThemeData(color: Colors.white)));
 }
+
+final appBarTheme = AppBarTheme(centerTitle: false, elevation: 0, color: kPrimaryColor);
