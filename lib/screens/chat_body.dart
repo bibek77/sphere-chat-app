@@ -70,9 +70,29 @@ class ChatCard extends StatelessWidget {
           horizontal: kDefaultPadding, vertical: kDefaultPadding * 0.75),
       child: Row(
         children: [
-          CircleAvatar(
-            radius: 24,
-            backgroundImage: AssetImage(chat.image),
+          Stack(
+            children: [
+              CircleAvatar(
+                radius: 24,
+                backgroundImage: AssetImage(chat.image),
+              ),
+              Positioned(
+                right: 0,
+                bottom: 0,
+                child: Container(
+                  height: 16,
+                  width: 16,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Theme.of(context).scaffoldBackgroundColor,
+                      width: 3
+                    )
+                  ),
+                ),
+              )
+            ],
           ),
           Expanded(
               child: Padding(
