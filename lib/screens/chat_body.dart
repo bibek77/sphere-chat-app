@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instant_messenger/components/outline_button.dart';
 import 'package:instant_messenger/models/chat_items.dart';
-import 'package:instant_messenger/models/chat_message.dart';
 import 'package:instant_messenger/screens/message_screen.dart';
 import 'package:instant_messenger/utils/constants.dart';
 
