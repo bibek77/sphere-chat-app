@@ -21,18 +21,18 @@ List dummyChatMessages = [
       messageStatus: MessageStatus.viewed,
       chatMessageType: ChatMessageType.text),
   ChatMessage(
+      text: "Hi",
+      isSender: true,
+      messageStatus: MessageStatus.viewed,
+      chatMessageType: ChatMessageType.text),
+  ChatMessage(
       text: "Hey how are you?",
       isSender: false,
       messageStatus: MessageStatus.viewed,
       chatMessageType: ChatMessageType.text),
   ChatMessage(
-      text: "Hi",
-      isSender: false,
-      messageStatus: MessageStatus.viewed,
-      chatMessageType: ChatMessageType.text),
-  ChatMessage(
-      text: "",
-      isSender: false,
+      text: "I am fine. thanks",
+      isSender: true,
       messageStatus: MessageStatus.viewed,
       chatMessageType: ChatMessageType.image),
   ChatMessage(
@@ -40,4 +40,19 @@ List dummyChatMessages = [
       isSender: false,
       messageStatus: MessageStatus.viewed,
       chatMessageType: ChatMessageType.audio),
+  ChatMessage(
+      text: "",
+      isSender: true,
+      messageStatus: MessageStatus.viewed,
+      chatMessageType: ChatMessageType.audio),
+  ChatMessage(
+      text: "Will be seeing you soon",
+      isSender: true,
+      messageStatus: MessageStatus.viewed,
+      chatMessageType: ChatMessageType.text),
+  ChatMessage(
+      text: "Need a sand refill",
+      isSender: false,
+      messageStatus: MessageStatus.viewed,
+      chatMessageType: ChatMessageType.text),
 ];
