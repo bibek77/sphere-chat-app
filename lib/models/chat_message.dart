@@ -42,7 +42,7 @@ List dummyChatMessages = [
       chatMessageType: ChatMessageType.audio),
   ChatMessage(
       text: "",
-      isSender: false,
+      isSender: true,
       messageStatus: MessageStatus.viewed,
       chatMessageType: ChatMessageType.audio),
   ChatMessage(

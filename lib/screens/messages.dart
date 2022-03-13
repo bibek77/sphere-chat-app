@@ -3,6 +3,7 @@ import 'package:instant_messenger/screens/text_message.dart';
 
 import '../models/chat_message.dart';
 import '../utils/constants.dart';
+import 'audio_message.dart';
 
 class Messages extends StatelessWidget {
   const Messages({
@@ -19,7 +20,9 @@ class Messages extends StatelessWidget {
         case ChatMessageType.text:
           return TextMessage(message: message);
         case ChatMessageType.audio:
-          return AudioMessage();
+          return AudioMessage(
+            message: message,
+          );
         default:
           return SizedBox();
       }
@@ -43,25 +46,6 @@ class Messages extends StatelessWidget {
           // ],
           messageContent(message),
         ],
-      ),
-    );
-  }
-}
-
-class AudioMessage extends StatelessWidget {
-  const AudioMessage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width * 0.55,
-      height: 30,
-      padding: EdgeInsets.symmetric(
-        horizontal: kDefaultPadding*0.75,
-        vertical: kDefaultPadding/2
-      ),
-      decoration: BoxDecoration(
-        color: kPrimaryColor,
       ),
     );
   }
