@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:instant_messenger/screens/text_message.dart';
+import 'package:instant_messenger/screens/video_message.dart';
 
 import '../models/chat_message.dart';
 import '../utils/constants.dart';
 import 'audio_message.dart';
+import 'message_tick.dart';
 
 class Messages extends StatelessWidget {
   const Messages({
@@ -21,6 +23,10 @@ class Messages extends StatelessWidget {
           return TextMessage(message: message);
         case ChatMessageType.audio:
           return AudioMessage(
+            message: message,
+          );
+        case ChatMessageType.video:
+          return VideoMessage(
             message: message,
           );
         default:
@@ -45,6 +51,10 @@ class Messages extends StatelessWidget {
           //   )
           // ],
           messageContent(message),
+          if (message.isSender)
+            MessageStatusTick(
+              messageStatus: message.messageStatus,
+            )
         ],
       ),
     );
