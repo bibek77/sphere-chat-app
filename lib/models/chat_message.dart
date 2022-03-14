@@ -44,14 +44,19 @@ List dummyChatMessages = [
       text: "",
       isSender: true,
       messageStatus: MessageStatus.viewed,
+      chatMessageType: ChatMessageType.video),
+  ChatMessage(
+      text: "",
+      isSender: true,
+      messageStatus: MessageStatus.viewed,
       chatMessageType: ChatMessageType.audio),
   ChatMessage(
-      text: "Will be seeing you soon",
+      text: "Naruto asked for your help",
       isSender: true,
       messageStatus: MessageStatus.viewed,
       chatMessageType: ChatMessageType.text),
   ChatMessage(
-      text: "Need a sand refill",
+      text: "Need a sand refill first",
       isSender: false,
       messageStatus: MessageStatus.viewed,
       chatMessageType: ChatMessageType.text),
